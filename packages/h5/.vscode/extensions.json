@@ -1,0 +1,28 @@
+{
+  "recommendations": [
+    // my extensions, ofc :P
+    "antfu.unocss",
+    "antfu.where-am-i",
+    // themes & icons
+    // "antfu.icons-carbon",
+    // "antfu.theme-vitesse",
+    // life savers!
+    "dbaeumer.vscode-eslint",
+    "Vue.volar",
+    // "GitHub.copilot",
+    "usernamehw.errorlens",
+    "streetsidesoftware.code-spell-checker",
+    // up to you
+    // "amodio.tsl-problem-matcher",
+    "eamodio.gitlens",
+    "EditorConfig.EditorConfig",
+    // "GitHub.vscode-pull-request-github",
+    // "mpontus.tab-cycle",
+    // "naumovs.color-highlight",
+    "richie5um2.vscode-sort-json",
+    "unional.vscode-sort-package-json",
+    // "voorjaar.windicss-intellisense",
+    // "WakaTime.vscode-wakatime",
+    "znck.grammarly"
+  ]
+}

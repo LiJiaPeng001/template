@@ -1,0 +1,49 @@
+{
+  "name": "h5",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:dev": "vite build --mode development",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "prepare": "husky install",
+    "lintStaged": "lint-staged",
+    "inpect": "vite inpect"
+  },
+  "dependencies": {
+    "@vueuse/core": "^9.13.0",
+    "axios": "^1.4.0",
+    "pinia": "^2.0.36",
+    "vant": "^4.3.1",
+    "vue": "^3.3.2",
+    "vue-router": "^4.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
+    "@peeeng/css": "^0.0.4",
+    "@peeeng/eslint-config": "^0.0.16",
+    "@peeeng/utils": "^0.0.9",
+    "@types/node": "^18.16.8",
+    "@vitejs/plugin-vue": "^4.2.2",
+    "eruda": "^2.11.3",
+    "eslint": "^8.40.0",
+    "husky": "^8.0.3",
+    "js-md5": "^0.7.3",
+    "jsencrypt": "^3.3.2",
+    "less": "^4.1.3",
+    "lint-staged": "^13.2.2",
+    "postcss-px-to-viewport-8-plugin": "^1.2.2",
+    "prettier": "^2.8.8",
+    "unplugin-auto-import": "^0.15.3",
+    "unplugin-vue-components": "^0.24.1",
+    "vite": "^4.3.5"
+  },
+  "lint-staged": {
+    "*.{vue,js}": [
+      "pnpm run lint"
+    ]
+  }
+}

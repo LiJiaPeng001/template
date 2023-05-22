@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>%VITE_APP_TITLE%</title>
+  <script>
+    !(function (n, w) {
+      var e = n.document,
+        t = e.documentElement,
+        o = "orientationchange" in n ? "orientationchange" : "resize",
+        a = function () {
+          var n = t.clientWidth || e.body.clientWidth || n.innerWidth || w;
+          t.style.fontSize = (n / w) * 100 + "px";
+        };
+      a();
+      e.addEventListener && n.addEventListener(o, a, !1);
+    })(window, 750);
+  </script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
