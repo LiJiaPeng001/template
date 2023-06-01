@@ -1,17 +1,7 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import routes from './routes'
+import { createRouter, createWebHashHistory } from 'vue-router/auto'
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes,
-  scrollBehavior(to, from, savedPosition) {
-    const { barScrollTop } = useSettingStore()
-
-    if (to.name in barScrollTop) return { top: barScrollTop[to.name] || 0 }
-
-    if (savedPosition) return savedPosition
-    else return { top: 0 }
-  },
 })
 
 router.beforeEach(async (to, from, next) => {

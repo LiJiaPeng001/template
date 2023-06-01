@@ -1,6 +1,10 @@
 import { resolve } from 'node:path'
 import autoImport from 'unplugin-auto-import/vite'
 import components from 'unplugin-vue-components/vite'
+import VueRouter from 'unplugin-vue-router/vite'
+
+ 
+import { VueRouterAutoImports } from 'unplugin-vue-router'
 import { VantResolver } from 'unplugin-vue-components/resolvers'
 import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -19,6 +23,11 @@ export default ({ mode }) => {
       },
     },
     plugins: [
+      VueRouter({
+        routesFolder: './src/views',
+        importMode: 'async',
+        dts: './typed-router.d.ts',
+      }),
       vue({
         script: {
           defineModel: true,
@@ -30,7 +39,7 @@ export default ({ mode }) => {
       autoImport({
         imports: [
           'vue',
-          'vue-router',
+          VueRouterAutoImports,
           '@vueuse/core',
           {
             vant: ['showoast'],

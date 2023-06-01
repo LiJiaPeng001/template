@@ -1,6 +1,0 @@
-{
-  "extends": [ "@peeeng" ],
-  "rules": {
-    "no-console": "off"
-  }
-}

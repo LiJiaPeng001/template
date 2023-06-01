@@ -1,3 +1,3 @@
-## starter-ts
+## template
 
-库的原始包
+常用模版
